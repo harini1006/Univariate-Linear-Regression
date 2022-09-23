@@ -34,9 +34,14 @@ c=Y_mean-m*X_mean
 print(m,c)  
 Y_pred = m*X+c
 print(Y_pred)
+import matplotlib.pyplot as plt
+plt.scatter(X,Y,color = 'blue')
+plt.plot(X,Y_pred,color = 'red')
+plt.show()
 ```
-## Sample Input and Output
-![inp](./input.jpg)
+## Output
 ![out](./linear_regression.png)
+![out](./graph.png)
+
 ## Result
 Thus the univariate Linear Regression was implemented to fit a straight line using least squares.
